@@ -8,7 +8,6 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg"],
       manifest: {
         name: "Praktyka Polska",
         short_name: "PraktykaPolska",
