@@ -3,20 +3,20 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  base: "/PraktykaPolska/",
+  base: "/PracticePoPolsku/",
   plugins: [
     react(),
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "Praktyka Polska",
-        short_name: "PraktykaPolska",
+        name: "PracticePoPolski",
+        short_name: "PracticePoPolsku",
         description: "Polish language revision app",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
-        start_url: "/PraktykaPolska/",
-        scope: "/PraktykaPolska/",
+        start_url: "/PracticePoPolsku/",
+        scope: "/PracticePoPolsku/",
         icons: [
           {
             src: "icons/icon-48x48.png",

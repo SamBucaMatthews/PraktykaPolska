@@ -1,1 +1,1 @@
-# Praktyka Polska
+# PracticePoPolsku
