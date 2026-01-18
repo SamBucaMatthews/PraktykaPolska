@@ -17,6 +17,24 @@
       }
     ]
   },
+  "lodówka": {
+    "gender": "feminine",
+    "cases": {
+      "nominative": "lodówka",
+      "genitive": "lodówki",
+      "dative": "lodówce",
+      "accusative": "lodówkę",
+      "instrumental": "lodówką",
+      "locative": "lodówce",
+      "vocative": "lodówko"
+    },
+    "translations": [
+      {
+        "language": "english",
+        "translation": "bed"
+      }
+    ]
+  },
   "łóżko": {
     "gender": "neuter",
     "cases": {
@@ -32,6 +50,24 @@
       {
         "language": "english",
         "translation": "bed"
+      }
+    ]
+  },
+  "szafa": {
+    "gender": "feminine",
+    "cases": {
+      "nominative": "szafa",
+      "genitive": "szafy",
+      "dative": "szafie",
+      "accusative": "szafę",
+      "instrumental": "szafą",
+      "locative": "szafie",
+      "vocative": "szafo"
+    },
+    "translations": [
+      {
+        "language": "english",
+        "translation": "wardrobe"
       }
     ]
   },
