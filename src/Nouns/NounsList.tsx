@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { NounsDictionary } from "../../types/Noun";
-import { loadNouns } from "../dataAccess/DataAccess";
+import { loadNouns } from "../DataAccess/DataAccess";
 import { useNavigate } from "react-router-dom";
 
 export default function NounsList() {

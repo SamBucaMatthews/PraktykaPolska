@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import type { NounEntry } from "../../types/Noun";
-import { loadNouns } from "../dataAccess/DataAccess";
+import { loadNouns } from "../DataAccess/DataAccess";
+import { PrepositionTable } from "./PrepositionTable";
 
 export default function NounDetails() {
     const { lemma } = useParams<{ lemma: string }>();
@@ -77,7 +78,7 @@ export default function NounDetails() {
                 </tbody>
             </table>
 
-
+            <PrepositionTable noun={noun} />
         </div>
     );
 }
