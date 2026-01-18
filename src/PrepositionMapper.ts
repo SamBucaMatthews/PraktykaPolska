@@ -1,39 +1,46 @@
 import type { Cases } from "../types/Cases";
 import type { NounEntry } from "../types/Noun";
 
-export const PrepositionCaseMap: Record<string, keyof Cases> = {
-  w: "locative",
-  na: "locative",
-  pod: "instrumental",
-  do: "genitive",
-  z: "instrumental",
-  o: "locative",
-  przy: "locative",
-  dla: "genitive",
-  od: "genitive",
-  przed: "instrumental",
-  za: "instrumental",
-  między: "instrumental",
-  po: "locative",
+export type PrepositionCaseRule = {
+  static: keyof Cases;
+  motion?: keyof Cases;
 };
 
-const prepositions = Object.keys(PrepositionCaseMap);
+export const PrepositionCaseMap: Record<string, PrepositionCaseRule> = {
+  w: { static: "locative", motion: "accusative" },
+  na: { static: "locative", motion: "accusative" },
+  pod: { static: "instrumental", motion: "accusative" },
+  do: { static: "genitive" },
+  z: { static: "instrumental" },
+  o: { static: "locative" },
+  przy: { static: "locative" },
+  dla: { static: "genitive" },
+  od: { static: "genitive" },
+  przed: { static: "instrumental" },
+  za: { static: "instrumental" },
+  między: { static: "instrumental" },
+  po: { static: "locative" },
+  nad: { static: "instrumental", motion: "accusative" },
+};
 
-type PrepositionWithCases = {
+export type PrepositionForm = {
   preposition: string;
-  singular: string;
-  plural: string;
+  singular: { static: string; motion?: string };
+  plural: { static: string; motion?: string };
 };
 
-export function getPrepositionsForNoun(
-  noun: NounEntry,
-): PrepositionWithCases[] {
-  return prepositions.map((prep) => {
-    const caseKey = PrepositionCaseMap[prep];
-    return {
+export function getPrepositionsForNoun(noun: NounEntry): PrepositionForm[] {
+  return Object.entries(PrepositionCaseMap)
+    .sort((a, b) => a[0].localeCompare(b[0], "pl"))
+    .map(([prep, rule]) => ({
       preposition: prep,
-      singular: noun.cases.singular[caseKey],
-      plural: noun.cases.plural[caseKey],
-    };
-  });
+      singular: {
+        static: noun.cases.singular[rule.static],
+        motion: rule.motion ? noun.cases.singular[rule.motion] : undefined,
+      },
+      plural: {
+        static: noun.cases.plural[rule.static],
+        motion: rule.motion ? noun.cases.plural[rule.motion] : undefined,
+      },
+    }));
 }

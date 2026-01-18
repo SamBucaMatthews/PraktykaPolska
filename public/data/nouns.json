@@ -1,4 +1,28 @@
 {
+  "dom": {
+    "gender": "masculine",
+    "cases": {
+      "singular": {
+        "nominative": "dom",
+        "genitive": "domu",
+        "dative": "domowi",
+        "accusative": "dom",
+        "instrumental": "domem",
+        "locative": "domu",
+        "vocative": "domu"
+      },
+      "plural": {
+        "nominative": "domy",
+        "genitive": "domów",
+        "dative": "domom",
+        "accusative": "domy",
+        "instrumental": "domami",
+        "locative": "domach",
+        "vocative": "domy"
+      }
+    },
+    "translations": [{ "language": "english", "translation": "house" }]
+  },
   "krzesło": {
     "gender": "neuter",
     "cases": {

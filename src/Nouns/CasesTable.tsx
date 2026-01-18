@@ -10,13 +10,13 @@ export const CasesTable: React.FC<CasesTableProps> = ({ noun }) => {
 
     return (
         <div>
-            <h3>Cases</h3>
+            <h3>Przypadki</h3>
             <table style={{ width: "100%", borderCollapse: "collapse" }}>
                 <thead>
                     <tr>
                         <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Przypadek</th>
-                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Liczba pojedyncza</th>
-                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Liczba mnoga</th>
+                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Liczba Pojedyncza</th>
+                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Liczba Mnoga</th>
                     </tr>
                 </thead>
                 <tbody>
