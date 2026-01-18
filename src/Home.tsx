@@ -10,10 +10,12 @@ export default function Home() {
             <div>
                 <img src={qrUrl} className="logo" alt="QR code to access the URL via camera" />
             </div>
-            <p>Choose a practice mode:</p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                <button onClick={() => navigate("/nouns")}>Nouns Case Practice</button>
+                <button onClick={() => navigate("/nouns")}>Rzeczowniki</button>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                <button onClick={() => navigate("/nouns/case-practice")}>Nouns Case Practice</button>
             </div>
         </div>
     );
