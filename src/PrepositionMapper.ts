@@ -19,14 +19,21 @@ export const PrepositionCaseMap: Record<string, keyof Cases> = {
 
 const prepositions = Object.keys(PrepositionCaseMap);
 
+type PrepositionWithCases = {
+  preposition: string;
+  singular: string;
+  plural: string;
+};
+
 export function getPrepositionsForNoun(
   noun: NounEntry,
-): { preposition: string; form: string }[] {
+): PrepositionWithCases[] {
   return prepositions.map((prep) => {
     const caseKey = PrepositionCaseMap[prep];
     return {
       preposition: prep,
-      form: noun.cases[caseKey],
+      singular: noun.cases.singular[caseKey],
+      plural: noun.cases.plural[caseKey],
     };
   });
 }

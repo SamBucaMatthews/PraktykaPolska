@@ -1,10 +1,10 @@
-import type { Cases } from "./Cases";
+import type { SingularAndPluralCases } from "./Cases";
 import type { Gender } from "./Gender";
 import type { Translation } from "./Translation";
 
 export interface NounEntry {
   gender: Gender;
-  cases: Cases;
+  cases: SingularAndPluralCases;
   translations?: Translation[];
 }
 

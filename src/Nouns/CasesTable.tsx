@@ -6,24 +6,29 @@ export type CasesTableProps = {
 };
 
 export const CasesTable: React.FC<CasesTableProps> = ({ noun }) => {
+    const cases = Object.keys(noun.cases.singular) as (keyof typeof noun.cases.singular)[];
+
     return (
         <div>
             <h3>Cases</h3>
             <table style={{ width: "100%", borderCollapse: "collapse" }}>
                 <thead>
                     <tr>
-                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Case</th>
-                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Form</th>
+                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Przypadek</th>
+                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Liczba pojedyncza</th>
+                        <th style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "4px 8px" }}>Liczba mnoga</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {Object.entries(noun.cases).map(([caseName, word]) => (
+                    {cases.map(caseName => (
                         <tr key={caseName}>
                             <td style={{ padding: "4px 8px", borderBottom: "1px solid #eee" }}>{caseName}</td>
-                            <td style={{ padding: "4px 8px", borderBottom: "1px solid #eee" }}>{word}</td>
+                            <td style={{ padding: "4px 8px", borderBottom: "1px solid #eee" }}>{noun.cases.singular[caseName]}</td>
+                            <td style={{ padding: "4px 8px", borderBottom: "1px solid #eee" }}>{noun.cases.plural[caseName]}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
-        </div>);
+        </div>
+    );
 };

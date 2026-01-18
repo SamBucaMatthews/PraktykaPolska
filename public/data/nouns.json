@@ -2,91 +2,121 @@
   "krzesło": {
     "gender": "neuter",
     "cases": {
-      "nominative": "krzesło",
-      "genitive": "krzesła",
-      "dative": "krzesłu",
-      "accusative": "krzesło",
-      "instrumental": "krzesłem",
-      "locative": "krześle",
-      "vocative": "krzesło"
-    },
-    "translations": [
-      {
-        "language": "english",
-        "translation": "chair"
+      "singular": {
+        "nominative": "krzesło",
+        "genitive": "krzesła",
+        "dative": "krzesłu",
+        "accusative": "krzesło",
+        "instrumental": "krzesłem",
+        "locative": "krześle",
+        "vocative": "krzesło"
+      },
+      "plural": {
+        "nominative": "krzesła",
+        "genitive": "krzeseł",
+        "dative": "krzesłom",
+        "accusative": "krzesła",
+        "instrumental": "krzesłami",
+        "locative": "krzesłach",
+        "vocative": "krzesła"
       }
-    ]
+    },
+    "translations": [{ "language": "english", "translation": "chair" }]
   },
   "lodówka": {
     "gender": "feminine",
     "cases": {
-      "nominative": "lodówka",
-      "genitive": "lodówki",
-      "dative": "lodówce",
-      "accusative": "lodówkę",
-      "instrumental": "lodówką",
-      "locative": "lodówce",
-      "vocative": "lodówko"
-    },
-    "translations": [
-      {
-        "language": "english",
-        "translation": "bed"
+      "singular": {
+        "nominative": "lodówka",
+        "genitive": "lodówki",
+        "dative": "lodówce",
+        "accusative": "lodówkę",
+        "instrumental": "lodówką",
+        "locative": "lodówce",
+        "vocative": "lodówko"
+      },
+      "plural": {
+        "nominative": "lodówki",
+        "genitive": "lodówek",
+        "dative": "lodówkom",
+        "accusative": "lodówki",
+        "instrumental": "lodówkami",
+        "locative": "lodówkach",
+        "vocative": "lodówki"
       }
-    ]
+    },
+    "translations": [{ "language": "english", "translation": "fridge" }]
   },
   "łóżko": {
     "gender": "neuter",
     "cases": {
-      "nominative": "łóżko",
-      "genitive": "łóżka",
-      "dative": "łóżku",
-      "accusative": "łóżko",
-      "instrumental": "łóżkiem",
-      "locative": "łóżku",
-      "vocative": "łóżko"
-    },
-    "translations": [
-      {
-        "language": "english",
-        "translation": "bed"
+      "singular": {
+        "nominative": "łóżko",
+        "genitive": "łóżka",
+        "dative": "łóżku",
+        "accusative": "łóżko",
+        "instrumental": "łóżkiem",
+        "locative": "łóżku",
+        "vocative": "łóżko"
+      },
+      "plural": {
+        "nominative": "łóżka",
+        "genitive": "łóżek",
+        "dative": "łóżkom",
+        "accusative": "łóżka",
+        "instrumental": "łóżkami",
+        "locative": "łóżkach",
+        "vocative": "łóżka"
       }
-    ]
+    },
+    "translations": [{ "language": "english", "translation": "bed" }]
   },
   "szafa": {
     "gender": "feminine",
     "cases": {
-      "nominative": "szafa",
-      "genitive": "szafy",
-      "dative": "szafie",
-      "accusative": "szafę",
-      "instrumental": "szafą",
-      "locative": "szafie",
-      "vocative": "szafo"
-    },
-    "translations": [
-      {
-        "language": "english",
-        "translation": "wardrobe"
+      "singular": {
+        "nominative": "szafa",
+        "genitive": "szafy",
+        "dative": "szafie",
+        "accusative": "szafę",
+        "instrumental": "szafą",
+        "locative": "szafie",
+        "vocative": "szafo"
+      },
+      "plural": {
+        "nominative": "szafy",
+        "genitive": "szaf",
+        "dative": "szafom",
+        "accusative": "szafy",
+        "instrumental": "szafami",
+        "locative": "szafach",
+        "vocative": "szafy"
       }
-    ]
+    },
+    "translations": [{ "language": "english", "translation": "wardrobe" }]
   },
   "stół": {
     "gender": "masculine",
     "cases": {
-      "nominative": "stół",
-      "genitive": "stołu",
-      "dative": "stołowi",
-      "accusative": "stół",
-      "instrumental": "stółem",
-      "locative": "stole",
-      "vocative": "stole"
-    },
-    "translations": [
-      {
-        "language": "english",
-        "translation": "table"
+      "singular": {
+        "nominative": "stół",
+        "genitive": "stołu",
+        "dative": "stołowi",
+        "accusative": "stół",
+        "instrumental": "stołem",
+        "locative": "stole",
+        "vocative": "stole"
+      },
+      "plural": {
+        "nominative": "stoły",
+        "genitive": "stołów",
+        "dative": "stołom",
+        "accusative": "stoły",
+        "instrumental": "stołami",
+        "locative": "stołach",
+        "vocative": "stoły"
       }
-    ]
+    },
+    "translations": [{ "language": "english", "translation": "table" }]
   }
 }
